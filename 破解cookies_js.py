@@ -57,7 +57,7 @@ cookie_str = executeJS(js_func, js_arg)
 # 将Cookie转换为字典格式
 cookie = parseCookie(cookie_str)
 
-print cookie
+print(cookie)
 
 # 带上Cookie再次访问url,获取正确数据
-print getHtml(TARGET_URL, cookie)[0:500]
+print(getHtml(TARGET_URL, cookie)[0:500])

@@ -68,12 +68,9 @@ js_time_num = str(int(func() + 4000)).split('.')[0]
 # print(js_time_num)
 # 获取一个0 到 10 的随机数
 func02 = ctxt.eval("""
-    (function(){
-        function hello(){
+        (function hello(){
             return parseInt(10 * Math.random(), 10);
-        }
-        return hello();
-    })
+        })
 """)
 # 使用javascript获取0-10的随机数
 js_random_num = str(func02())

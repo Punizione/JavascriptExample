@@ -6,7 +6,9 @@ class EnAES(object):
     def __init__(self):
         # self.BS的值为16
         self.BS = AES.block_size
-        self.key = b'qnbyzzwmdgghmcnm'
+        # 由用户输入的16位或24位或32位长的初始密码字符串 这里的话就是该网站写死的 要从script脚本中细心查找
+        self.key = 'qnbyzzwmdgghmcnm'
+        # 通过AES处理初始密码字符串，并返回cipher对象
         self.cipher = AES.new(self.key, AES.MODE_ECB)   # 初始化AES实例， 使用ECB模式，源码加密模式就是这样子，key也是一样的
 
     def pad(self, s):
@@ -46,8 +48,11 @@ class EnAES(object):
         #                          ).decode('utf-8')[:-2].replace('/', '^').replace('\\', '^')
         pad_text = self.pad(text)
         print('pad_text : ', pad_text)
+        # 输入需要加密的字符串，注意字符串长度要是16的倍数。16,32,48..返回的结果是一个二进制字符串
         encrypt_text = self.cipher.encrypt(pad_text)
         print('encrypt_text : ', encrypt_text)
+        # 将加密后的字符串通过base64编码。（一下是两种base64编码）
+        # 至于为什么要把已经加密后的字符串再用base64编码，我觉得是对字符串的处理是基于二进制的，而base64的原理是在每6个二进制数的前面加两个零，这样的话，ascii对处理好的字符串编码就全部可见了
         encrypt_text_utf8 = base64.standard_b64encode(encrypt_text).decode('utf-8')
         encrypt_text_utf8 = base64.b64encode(encrypt_text).decode('utf-8')
         print('encrypt_text_utf-8 : ', encrypt_text_utf8.encode())
@@ -55,10 +60,12 @@ class EnAES(object):
         return encrypt_text_utf8[:-2]
 
     def url_encrypt(self, url):
+        # 通过分割提取获取到url中的数字id
         url_id = url.split('/')[-1].split('.')[0]
         print('url_id : ', url_id)
         encrypt_id = self.aes_encrypt(url_id)  # 获取url中的数字"20825",并调用aes_encrypt解密
         url = url.split('/')
+        # 获取得到加密后的id进行替换、得到加密后的url
         url[-1] = encrypt_id+'.'+url[-1].split('.')[1]
         return "/".join(url)
 

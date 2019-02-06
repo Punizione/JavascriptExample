@@ -45,7 +45,6 @@ headers = {
 发送post请求需要两个（salt、sign）参数 但这两个参数已经加密了。所以需要破解js
 下面是生成sign参数的方法
 sign: n.md5("fanyideskweb" + e + i + "p09@Bn{h02_BIEe]$P^nG")
-
 r = "" + (new Date).getTime(),
 i = r + parseInt(10 * Math.random(), 10)
 上面个行函数是获取i的值 即是上面sign的i参数

@@ -46,6 +46,7 @@ class EnAES(object):
         #                                  ).decode('utf-8')[:-2].replace('/', '^').replace('\\', '^')
         # return base64.standard_b64encode(self.cipher.encrypt(self.pad(text))
         #                          ).decode('utf-8')[:-2].replace('/', '^').replace('\\', '^')
+        # 因为需要加密的字符串长度必须为16的倍数、所以使用pad函数进行填充
         pad_text = self.pad(text)
         print('pad_text : ', pad_text)
         # 输入需要加密的字符串，注意字符串长度要是16的倍数。16,32,48..返回的结果是一个二进制字符串

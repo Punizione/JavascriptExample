@@ -6,7 +6,7 @@
         this.V = "";
         this.X = "";
         this.D = "1549697942";
-        this.$ = "z11.cnzz.com";
+        this. = "z11.cnzz.com";
         this.W = "";
         this.H = "CNZZDATA" + this.c;
         this.G = "_CNZZDbridge_" + this.c;
@@ -559,7 +559,7 @@
                 b.push("h=1");
                 var c = b.join("&");
                 "[object String]" === {}.toString.call(this.v) ? this.j([q + "//ei.cnzz.com/stat.htm?" + c]) : this.F || this.u ? this.j([u + "/stat.htm?" + c]) : (this.W && this.j([q + "//" + this.W + "/stat.htm?" + c]),
-                this.$ && this.j([q + "//" + this.$ + "/stat.htm?" + c]))
+                this. && this.j([q + "//" + this. + "/stat.htm?" + c]))
             } catch (d) {
                 g(d, "sD failed")
             }
@@ -599,7 +599,7 @@
                     var c = this.fa()
                       , d = new Date;
                     d.setTime(d.getTime() + 157248E5);
-                    var e = document.location.hostname.match(/[a-z0-9][a-z0-9\-]+\.[a-z\.]{2,6}$/i);
+                    var e = document.location.hostname.match(/[a-z0-9][a-z0-9\-]+\.[a-z\.]{2,6}/i);
                     this.aa(this.K, c, d, "/", e ? e[0] : "");
                     b = c
                 }

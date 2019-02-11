@@ -16,7 +16,7 @@ data = {
 	'client': 'fanyideskweb',
 	# r + parseInt(10 * Math.random(), 10);
 	'salt': '',
-	# sign: n.md5("fanyideskweb" + e + i + "p09@Bn{h02_BIEe]$P^nG")
+	# sign: n.md5("fanyideskweb" + e + i + "p09@Bn{h02_BIEe]P^nG")
 	'sign': '',
 	# r = "" + (new Date).getTime()
 	'ts': '',
@@ -44,7 +44,7 @@ headers = {
 '''
 发送post请求需要两个（salt、sign）参数 但这两个参数已经加密了。所以需要破解js
 下面是生成sign参数的方法
-sign: n.md5("fanyideskweb" + e + i + "p09@Bn{h02_BIEe]$P^nG")
+sign: n.md5("fanyideskweb" + e + i + "p09@Bn{h02_BIEe]P^nG")
 r = "" + (new Date).getTime(),
 i = r + parseInt(10 * Math.random(), 10)
 上面个行函数是获取i的值 即是上面sign的i参数
@@ -82,7 +82,7 @@ salt = js_time_num + js_random_num
 # print(salt)
 # 然后通过Javascript的代码 得知使用下列字符串 然后将其转化成md5
 english = input('请输入需要翻译的英文 : ')
-sign = "fanyideskweb" + english + str(salt) + "p09@Bn{h02_BIEe]$P^nG"
+sign = "fanyideskweb" + english + str(salt) + "p09@Bn{h02_BIEe]P^nG"
 convert_method = 'en2zh-CHS'
 def getMD5(string):
 	md5 = hashlib.md5()

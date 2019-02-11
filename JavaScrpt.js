@@ -1,18 +1,23 @@
-import PyV8
-
-execute = PyV8.JSContext()
-execute.enter()
 
 
-func01 = '''
-(function jandan_load_img() {
+function jandan_load_img() {
     var e = "Ly93eDQuc2luYWltZy5jbi9tdzYwMC83YTY5ODA0OWd5MWcwMWZhbHpxaGFqMjE2MDFrMDRxcC5qcGc="
     var c = jdbbMJ9sf1okhAg9WNRZ3tJlnKEXWT7edj(e, "NhTiXBVB0rv6Oo2e1IWvBusR1R68aRBY");
-})
-'''
+    var a = ('<a href="' + c.replace(/(\/\/\w+\.sinaimg\.cn\/)(\w+)(\/.+\.(gif|jpg|jpeg))/, "1large3") + '"  target="_blank" class="view_img_link">[查看原图]</a>');
+    d.before(a);
+    d.before("<br>");
+    d.removeAttr("onload");
+    d.attr("src", location.protocol + c.replace(/(\/\/\w+\.sinaimg\.cn\/)(\w+)(\/.+\.gif)/, "1thumb1803"));
+    if (/\.gif/.test(c)) {
+        d.attr("org_src", location.protocol + c);
+        b.onload = function() {
+            add_img_loading_mask(this, load_sina_gif)
+        }
+    }
+}
 
-func02 = '''
-var jdbbMJ9sf1okhAg9WNRZ3tJlnKEXWT7edj = (function(o, y, g) {
+
+var jdbbMJ9sf1okhAg9WNRZ3tJlnKEXWT7edj = function(o, y, g) {
     var d = o;
     var l = "DECODE";
     var y = y ? y : "";
@@ -72,16 +77,10 @@ var jdbbMJ9sf1okhAg9WNRZ3tJlnKEXWT7edj = (function(o, y, g) {
     }
     if (l == "DECODE") {
         m = base64_encode(m);
-        var c = "";
-        // m = m.replace(c, "");
+        var c = new RegExp("=","g");
+        m = m.replace(c, "");
         m = u + m;
         m = base64_decode(d)
     }
     return m
-})
-'''
-with open('md5.js')as f:
-    a = f.read()
-result01 = execute.eval(a + func01 + func02)
-# result02 = execute.eval(func02)
-print(result01())
+};

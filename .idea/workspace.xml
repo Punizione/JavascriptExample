@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e751f0f-0dc2-4b1e-8e28-ae64757f5940" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weather01.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather02.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather03.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather04.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/破解历史空气质量.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScrpt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RSA-AES-MD5-DES-DES3-MD5-SHA-HMAC.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/md5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JC航空公司hash字段javascript破解.py" beforeDir="false" afterPath="$PROJECT_DIR$/JC航空公司hash字段javascript破解.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather01.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather01.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather03.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather03.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather04.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather04.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/破解有道词典js.py" beforeDir="false" afterPath="$PROJECT_DIR$/破解有道词典js.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/获取关注数量(最最最简单的js破解).py" beforeDir="false" afterPath="$PROJECT_DIR$/获取关注数量(最最最简单的js破解).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/通过pyv8破解贵州url.py" beforeDir="false" afterPath="$PROJECT_DIR$/通过pyv8破解贵州url.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +27,7 @@
     <SUITE FILE_PATH="coverage/__JavaScript__$JChashjavascript.coverage" NAME="JC航空公司hash字段javascript破解 Coverage Results" MODIFIED="1549646307181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/__JavaScript__$js.coverage" NAME="破解有道词典js Coverage Results" MODIFIED="1549465377226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/__JavaScript__$.coverage" NAME="破解历史空气质量 Coverage Results" MODIFIED="1549703499405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/__JavaScript__$JavaScript_demo.coverage" NAME="JavaScript_demo Coverage Results" MODIFIED="1549883484285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/__JavaScript__$_js_.coverage" NAME="获取关注数量(最最最简单的js破解) Coverage Results" MODIFIED="1549509030522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -28,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/破解有道词典js.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-265">
+            <state relative-caret-position="567">
               <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -40,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/破解贵州url加密.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
+            <state relative-caret-position="102">
               <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -49,11 +56,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/通过pyv8破解贵州url.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RSA-AES-MD5-DES-DES3-MD5-SHA-HMAC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+            <state relative-caret-position="42">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript_demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1437">
+              <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JC航空公司hash字段javascript破解.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3526">
+              <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -61,11 +86,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/破解历史空气质量.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather01.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="151809">
+              <caret line="7235" column="31" selection-start-line="7235" selection-start-column="31" selection-end-line="7235" selection-end-column="31" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/独自破解百度工商信息.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1575">
+              <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScrpt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1617">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -73,46 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weather04.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state relative-caret-position="41475">
               <caret line="1975" column="40" selection-start-line="1975" selection-start-column="17" selection-end-line="1975" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather01.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="7235" column="31" lean-forward="true" selection-start-line="7235" selection-start-column="31" selection-end-line="7235" selection-end-column="31" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/获取关注数量(最最最简单的js破解).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather02.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -120,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weather03.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13923">
-              <caret line="651" lean-forward="true" selection-start-line="651" selection-end-line="651" />
+            <state relative-caret-position="13671">
+              <caret line="651" selection-start-line="651" selection-end-line="651" />
             </state>
           </provider>
         </entry>
@@ -131,24 +142,31 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>cryptojs</find>
-      <find>$</find>
       <find>open(uuu)</find>
       <find>pid</find>
       <find>locals</find>
       <find>window.</find>
       <find>window</find>
       <find>getdatafrom</find>
+      <find>$</find>
+      <find>DECODE</find>
+      <find>.ajax</find>
+      <find>.trim</find>
+      <find>xports</find>
+      <find>jdbbMJ9sf1okhAg9WNRZ3tJlnKEXWT7edj</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>ajax</replace>
+      <replace>trim</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -161,7 +179,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/破解cookies_js.py" />
-        <option value="$PROJECT_DIR$/JavaScript_demo.py" />
         <option value="$PROJECT_DIR$/ase_encryption.js" />
         <option value="$PROJECT_DIR$/破解有道词典js.py" />
         <option value="$PROJECT_DIR$/通过pyv8破解贵州url.py" />
@@ -177,6 +194,10 @@
         <option value="$PROJECT_DIR$/weather05.js" />
         <option value="$PROJECT_DIR$/破解历史空气质量.py" />
         <option value="$PROJECT_DIR$/weather04.js" />
+        <option value="$PROJECT_DIR$/JavaScrpt.js" />
+        <option value="$PROJECT_DIR$/md5.js" />
+        <option value="$PROJECT_DIR$/JavaScript_demo.py" />
+        <option value="$PROJECT_DIR$/RSA-AES-MD5-DES-DES3-MD5-SHA-HMAC.py" />
       </list>
     </option>
   </component>
@@ -230,7 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.破解历史空气质量">
+  <component name="RunManager" selected="Python.JavaScript_demo">
     <configuration name="破解百度工商信息查询" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="--JavaScript--" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,6 +266,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/破解百度工商信息查询.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="JC航空公司hash字段javascript破解" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="--JavaScript--" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JC航空公司hash字段javascript破解.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="JavaScript_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="--JavaScript--" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JavaScript_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -297,28 +362,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="JC航空公司hash字段javascript破解" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="--JavaScript--" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JC航空公司hash字段javascript破解.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="通过pyv8破解贵州url" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="--JavaScript--" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -343,8 +386,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.破解历史空气质量" />
-        <item itemvalue="Python.独自破解百度工商信息" />
+        <item itemvalue="Python.JavaScript_demo" />
         <item itemvalue="Python.JC航空公司hash字段javascript破解" />
         <item itemvalue="Python.通过pyv8破解贵州url" />
         <item itemvalue="Python.破解百度工商信息查询" />
@@ -367,18 +409,20 @@
       <workItem from="1549546747527" duration="543000" />
       <workItem from="1549591196140" duration="1450000" />
       <workItem from="1549619337475" duration="265000" />
-      <workItem from="1549619781564" duration="16909000" />
+      <workItem from="1549619781564" duration="17241000" />
+      <workItem from="1549783968201" duration="3541000" />
+      <workItem from="1549883007588" duration="1396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42554000" />
+    <option name="totallyTimeSpent" value="47823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19527897" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20100144" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -415,9 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript_demo.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -435,83 +476,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JC航空公司hash字段javascript破解.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3379">
-          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/破解百度工商信息查询.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-670">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/独自破解百度工商信息.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1077">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather02.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather03.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13923">
-          <caret line="651" lean-forward="true" selection-start-line="651" selection-end-line="651" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/破解有道词典js.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-265">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/weather05.js" />
     <entry file="file://$PROJECT_DIR$/通过pyv8破解贵州url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+        <state relative-caret-position="1239">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/破解贵州url加密.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/获取关注数量(最最最简单的js破解).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
+        <state relative-caret-position="525">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -519,42 +497,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather05.js">
+    <entry file="file://$PROJECT_DIR$/weather02.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="5265" column="32" lean-forward="true" selection-start-line="5265" selection-start-column="32" selection-end-line="5265" selection-end-column="32" />
+        <state relative-caret-position="462">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/破解历史空气质量.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/md5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4788">
+          <caret line="228" column="35" selection-start-line="228" selection-start-column="35" selection-end-line="228" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/破解百度工商信息查询.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weather01.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="7235" column="31" lean-forward="true" selection-start-line="7235" selection-start-column="31" selection-end-line="7235" selection-end-column="31" />
+        <state relative-caret-position="151809">
+          <caret line="7235" column="31" selection-start-line="7235" selection-start-column="31" selection-end-line="7235" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/独自破解百度工商信息.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScrpt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1617">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weather04.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
+        <state relative-caret-position="41475">
           <caret line="1975" column="40" selection-start-line="1975" selection-start-column="17" selection-end-line="1975" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/破解历史空气质量.py">
+    <entry file="file://$PROJECT_DIR$/weather03.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="13671">
+          <caret line="651" selection-start-line="651" selection-end-line="651" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1437">
+          <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JC航空公司hash字段javascript破解.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3526">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/破解有道词典js.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/破解贵州url加密.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSA-AES-MD5-DES-DES3-MD5-SHA-HMAC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>

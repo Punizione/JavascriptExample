@@ -1976,7 +1976,7 @@ function getServerData(method, object, callback, period) {
     const data = getDataFromLocalStorage(key, period);
     if (!data) {
         var param = getParam(method, object);
-        $.ajax({
+        ajax({
             url: 'api/historyapi.php',
             data: {
                 hd: param

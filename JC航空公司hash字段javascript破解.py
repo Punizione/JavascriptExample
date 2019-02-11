@@ -13,7 +13,7 @@ javascript代码 l.HashCode = O.default.encode(l.DepartureIataCode + l.ArrivalIa
 这个参数前面的英文为出发地以及目的地、中间为日期、后面sfeif#@%%为固定的字符串
 '''
 
-# s = 'CKGPNH2019-02-06sfeif#@%%cv3sdf@#$f3*A(2FG22)&sa*&_K#JD'
+# s = 'CKGPNH2019-02-06sfeif#@%%cv3sdf@#f3*A(2FG22)&sa*&_K#JD'
 # print(len(s))
 
 # # 然后带着这个参数先执行str2binl函数
@@ -21,7 +21,7 @@ javascript代码 l.HashCode = O.default.encode(l.DepartureIataCode + l.ArrivalIa
 # # chrsz = 8
 # # return binl2hex(core_md5(str2binl(s), s.length * chrsz))
 # string = "CKGPNH2019-02-06sfeif#@%%"
-# e = "cv3sdf@#$f3"
+# e = "cv3sdf@#f3"
 # setcode = '*A(2FG22)&sa*&_K#JD'
 
 ctxt = PyV8.JSContext()
@@ -224,7 +224,7 @@ func04 = ctxt.eval('''
             }
             return str
         }
-        return hex_md5(str + 'cv3sdf@#$f3' + '*A(2FG22)&sa*&_K#JD')
+        return hex_md5(str + 'cv3sdf@#f3' + '*A(2FG22)&sa*&_K#JD')
     })
 	''')
 print(func04('MFMPNH2019-02-07sfeif#@%%'))

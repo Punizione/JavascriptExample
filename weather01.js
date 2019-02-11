@@ -111,7 +111,7 @@
           , e = a < 0 ? "-" : ""
           , c = String(z(a = M(a).toFixed(f)))
           , g = c.length > 3 ? c.length % 3 : 0;
-        return e + (g ? c.substr(0, g) + d : "") + c.substr(g).replace(/(\d{3})(?=\d)/g, "$1" + d) + (f ? b + M(a - c).toFixed(f).slice(2) : "")
+        return e + (g ? c.substr(0, g) + d : "") + c.substr(g).replace(/(\d{3})(?=\d)/g, "1" + d) + (f ? b + M(a - c).toFixed(f).slice(2) : "")
     }
     function Ea(a, b) {
         return Array((b || 2) + 1 - String(a).length).join(0) + a
@@ -139,7 +139,7 @@
                     g = /\.([0-9])/,
                     h = G.lang,
                     i = void 0,
-                    /f$/.test(f) ? (i = (i = f.match(g)) ? i[1] : -1,
+                    /f/.test(f) ? (i = (i = f.match(g)) ? i[1] : -1,
                     e = Da(e, i, h.decimalPoint, f.indexOf(",") > -1 ? h.thousandsSep : "")) : e = ab(f, e)
             }
             j.push(e);
@@ -267,7 +267,7 @@
     function fb() {
         this.init.apply(this, arguments)
     }
-    var u, y = document, C = window, P = Math, w = P.round, N = P.floor, Ha = P.ceil, s = P.max, I = P.min, M = P.abs, U = P.cos, ba = P.sin, Aa = P.PI, Ba = Aa * 2 / 360, ra = navigator.userAgent, Hb = C.opera, ya = /msie/i.test(ra) && !Hb, gb = y.documentMode === 8, hb = /AppleWebKit/.test(ra), Xa = /Firefox/.test(ra), Ib = /(Mobile|Android|Windows Phone)/.test(ra), Ca = "http://www.w3.org/2000/svg", V = !!y.createElementNS && !!y.createElementNS(Ca, "svg").createSVGRect, Nb = Xa && parseInt(ra.split("Firefox/")[1], 10) < 4, da = !V && !ya && !!y.createElement("canvas").getContext, Ya, ib = y.documentElement.ontouchstart !== u, Jb = {}, ub = 0, bb, G, ab, oa, vb, E, la = function() {}, Ia = [], Ga = "div", Q = "none", Ob = /^[0-9]+$/, Kb = "rgba(192,192,192," + (V ? 1.0E-4 : 0.002) + ")", Lb = "stroke-width", cb, Pa, pb, qb, rb, Wa, db, eb, Cb, Db, sb, Eb, Fb, L = {};
+    var u, y = document, C = window, P = Math, w = P.round, N = P.floor, Ha = P.ceil, s = P.max, I = P.min, M = P.abs, U = P.cos, ba = P.sin, Aa = P.PI, Ba = Aa * 2 / 360, ra = navigator.userAgent, Hb = C.opera, ya = /msie/i.test(ra) && !Hb, gb = y.documentMode === 8, hb = /AppleWebKit/.test(ra), Xa = /Firefox/.test(ra), Ib = /(Mobile|Android|Windows Phone)/.test(ra), Ca = "http://www.w3.org/2000/svg", V = !!y.createElementNS && !!y.createElementNS(Ca, "svg").createSVGRect, Nb = Xa && parseInt(ra.split("Firefox/")[1], 10) < 4, da = !V && !ya && !!y.createElement("canvas").getContext, Ya, ib = y.documentElement.ontouchstart !== u, Jb = {}, ub = 0, bb, G, ab, oa, vb, E, la = function() {}, Ia = [], Ga = "div", Q = "none", Ob = /^[0-9]+/, Kb = "rgba(192,192,192," + (V ? 1.0E-4 : 0.002) + ")", Lb = "stroke-width", cb, Pa, pb, qb, rb, Wa, db, eb, Cb, Db, sb, Eb, Fb, L = {};
     C.Highcharts = C.Highcharts ? ka(16, !0) : {};
     ab = function(a, b, c) {
         if (!t(b) || isNaN(b))
@@ -806,7 +806,7 @@
                         e !== u && (d = e);
                         if (c === "d")
                             d && d.join && (d = d.join(" ")),
-                            /(NaN| {2}|^$)/.test(d) && (d = "M 0 0");
+                            /(NaN| {2}|^)/.test(d) && (d = "M 0 0");
                         else if (c === "x" && h === "text")
                             for (e = 0; e < g.childNodes.length; e++)
                                 f = g.childNodes[e],
@@ -837,7 +837,7 @@
                                 d = Q;
                             else {
                                 if (d) {
-                                    d = d.replace("shortdashdotdot", "3,1,1,1,1,1,").replace("shortdashdot", "3,1,1,1").replace("shortdot", "1,1,").replace("shortdash", "3,1,").replace("longdash", "8,3,").replace(/dot/g, "1,3,").replace("dash", "4,3,").replace(/,$/, "").split(",");
+                                    d = d.replace("shortdashdotdot", "3,1,1,1,1,1,").replace("shortdashdot", "3,1,1,1").replace("shortdot", "1,1,").replace("shortdash", "3,1,").replace("longdash", "8,3,").replace(/dot/g, "1,3,").replace("dash", "4,3,").replace(/,/, "").split(",");
                                     for (e = d.length; e--; )
                                         d[e] = z(d[e]) * n(a["stroke-width"], this["stroke-width"]);
                                     d = d.join(",")
@@ -872,7 +872,7 @@
                         this.symbolName && /^(x|y|width|height|r|start|end|innerR|anchorX|anchorY)/.test(c) && (m || (this.symbolAttr(a),
                         m = !0),
                         j = !0);
-                        if (l && /^(width|height|visibility|x|y|d|transform|cx|cy|r)$/.test(c))
+                        if (l && /^(width|height|visibility|x|y|d|transform|cx|cy|r)/.test(c))
                             for (e = l.length; e--; )
                                 v(l[e], c, c === "height" ? s(d - (l[e].cutHeight || 0), 0) : d);
                         if ((c === "width" || c === "height") && h === "rect" && d < 0)
@@ -1177,7 +1177,7 @@
             this.box = g;
             this.boxWrapper = f;
             this.alignedObjects = [];
-            this.url = (Xa || hb) && y.getElementsByTagName("base").length ? e.href.replace(/#.*?$/, "").replace(/([\('\)])/g, "\\$1").replace(/ /g, "%20") : "";
+            this.url = (Xa || hb) && y.getElementsByTagName("base").length ? e.href.replace(/#.*?/, "").replace(/([\('\)])/g, "\\1").replace(/ /g, "%20") : "";
             this.createElement("desc").add().element.appendChild(y.createTextNode("Created with Highcharts 3.0.9"));
             this.defs = this.createElement("defs").add();
             this.forExport = d;
@@ -1223,7 +1223,7 @@
         draw: function() {},
         buildText: function(a) {
             for (var b = a.element, c = this, d = c.forExport, e = n(a.textStr, "").toString().replace(/<(b|strong)>/g, '<span style="font-weight:bold">').replace(/<(i|em)>/g, '<span style="font-style:italic">').replace(/<a/g, "<span").replace(/<\/(b|strong|i|em|a)>/g, "</span>").split(/<br.*?>/g), f = b.childNodes, g = /style="([^"]+)"/, h = /href="(http[^"]+)"/, i = v(b, "x"), j = a.styles, k = a.textWidth, l = j && j.lineHeight, m = f.length, q = function(a) {
-                return l ? z(l) : c.fontMetrics(/px$/.test(a && a.style.fontSize) ? a.style.fontSize : j.fontSize || 11).h
+                return l ? z(l) : c.fontMetrics(/px/.test(a && a.style.fontSize) ? a.style.fontSize : j.fontSize || 11).h
             }; m--; )
                 b.removeChild(f[m]);
             k && !a.added && this.box.appendChild(b);
@@ -1234,7 +1234,7 @@
                 p(l, function(e) {
                     if (e !== "" || l.length === 1) {
                         var o = {}, n = y.createElementNS(Ca, "tspan"), p;
-                        g.test(e) && (p = e.match(g)[1].replace(/(;| |^)color([ :])/, "$1fill$2"),
+                        g.test(e) && (p = e.match(g)[1].replace(/(;| |^)color([ :])/, "1fill2"),
                         v(n, "style", p));
                         h.test(e) && !d && (v(n, "onclick", 'location.href="' + e.match(h)[1] + '"'),
                         D(n, {
@@ -1251,7 +1251,7 @@
                         b.appendChild(n),
                         m++,
                         k))
-                            for (var e = e.replace(/([^\^])-/g, "$1- ").split(" "), o = e.length > 1 && j.whiteSpace !== "nowrap", t, s, w = a._clipHeight, u = [], r = q(), $ = 1; o && (e.length || u.length); )
+                            for (var e = e.replace(/([^\^])-/g, "1- ").split(" "), o = e.length > 1 && j.whiteSpace !== "nowrap", t, s, w = a._clipHeight, u = [], r = q(),  = 1; o && (e.length || u.length); )
                                 delete a.bBox,
                                 t = a.getBBox(),
                                 s = t.width,
@@ -1259,8 +1259,8 @@
                                 t = s > k,
                                 !t || e.length === 1 ? (e = u,
                                 u = [],
-                                e.length && ($++,
-                                w && $ * r > w ? (e = ["..."],
+                                e.length && (++,
+                                w &&  * r > w ? (e = ["..."],
                                 a.attr("title", a.textStr)) : (n = y.createElementNS(Ca, "tspan"),
                                 v(n, {
                                     dy: r,
@@ -1416,7 +1416,7 @@
             return f
         },
         symbol: function(a, b, c, d, e, f) {
-            var g, h = this.symbols[a], h = h && h(w(b), w(c), d, e, f), i = /^url\((.*?)\)$/, j, k;
+            var g, h = this.symbols[a], h = h && h(w(b), w(c), d, e, f), i = /^url\((.*?)\)/, j, k;
             if (h)
                 g = this.path(h),
                 r(g, {
@@ -1582,11 +1582,11 @@
                 va = (Z === void 0 || Sa === void 0 || o.styles.textAlign) && n.getBBox();
                 o.width = (Z || va.width || 0) + 2 * ea + lb;
                 o.height = (Sa || va.height || 0) + 2 * ea;
-                $ = ea + q.fontMetrics(a && a.fontSize).b;
+                 = ea + q.fontMetrics(a && a.fontSize).b;
                 if (y) {
                     if (!H)
                         a = w(-s * ea),
-                        b = h ? -$ : 0,
+                        b = h ? - : 0,
                         o.box = H = d ? q.symbol(d, a, b, o.width, o.height, v) : q.rect(a, b, o.width, o.height, 0, v[Lb]),
                         H.add(o);
                     H.isImg || H.attr(x({
@@ -1598,7 +1598,7 @@
             }
             function k() {
                 var a = o.styles, a = a && a.textAlign, b = lb + ea * (1 - s), c;
-                c = h ? 0 : $;
+                c = h ? 0 : ;
                 if (t(Z) && (a === "center" || a === "right"))
                     b += {
                         center: 0.5,
@@ -1628,7 +1628,7 @@
             }
             var q = this, o = q.g(i), n = q.text("", 0, 0, g).attr({
                 zIndex: 1
-            }), H, va, s = 0, ea = 3, lb = 0, Z, Sa, Ta, K, B = 0, v = {}, $, g = o.attrSetters, y;
+            }), H, va, s = 0, ea = 3, lb = 0, Z, Sa, Ta, K, B = 0, v = {}, , g = o.attrSetters, y;
             F(o, "add", m);
             g.width = function(a) {
                 Z = a;
@@ -2217,12 +2217,12 @@
                             t = 'angle="' + (90 - P.atan((m - a) / (q - c)) * 180 / Aa) + '"',
                             r();
                         else {
-                            var j = m.r, Sa = j * 2, Ta = j * 2, v = m.cx, B = m.cy, x = b.radialReference, $, j = function() {
-                                x && ($ = d.getBBox(),
-                                v += (x[0] - $.x) / $.width - 0.5,
-                                B += (x[1] - $.y) / $.height - 0.5,
-                                Sa *= x[2] / $.width,
-                                Ta *= x[2] / $.height);
+                            var j = m.r, Sa = j * 2, Ta = j * 2, v = m.cx, B = m.cy, x = b.radialReference, , j = function() {
+                                x && ( = d.getBBox(),
+                                v += (x[0] - .x) / .width - 0.5,
+                                B += (x[1] - .y) / .height - 0.5,
+                                Sa *= x[2] / .width,
+                                Ta *= x[2] / .height);
                                 t = 'src="' + G.global.VMLRadialGradientURL + '" size="' + Sa + "," + Ta + '" origin="0.5,0.5" position="' + v + "," + B + '" color2="' + s + '" ';
                                 r()
                             };
@@ -3734,11 +3734,11 @@
             this.move(w(c.x), w(c.y), a.plotX + b.plotLeft, a.plotY + b.plotTop)
         }
     };
-    var $a = Highcharts.Pointer = function(a, b) {
+    var a = Highcharts.Pointer = function(a, b) {
         this.init(a, b)
     }
     ;
-    $a.prototype = {
+    a.prototype = {
         init: function(a, b) {
             var c = b.chart, d = c.events, e = da ? "" : c.zoomType, c = a.inverted, f;
             this.options = b;
@@ -4167,7 +4167,7 @@
     };
     if (C.PointerEvent || C.MSPointerEvent) {
         var na = {};
-        $a.prototype.getWebkitTouches = function() {
+        a.prototype.getWebkitTouches = function() {
             var a, b = [];
             b.item = function(a) {
                 return this[a]
@@ -4182,11 +4182,11 @@
             return b
         }
         ;
-        Va($a.prototype, "init", function(a, b, c) {
+        Va(a.prototype, "init", function(a, b, c) {
             b.container.style["-ms-touch-action"] = b.container.style["touch-action"] = "none";
             a.call(this, b, c)
         });
-        Va($a.prototype, "setDOMEvents", function(a) {
+        Va(a.prototype, "setDOMEvents", function(a) {
             var b = this;
             a.apply(this, Array.prototype.slice.call(arguments, 1));
             p([[this.chart.container, "PointerDown", "touchstart", "onContainerTouchStart", function(a) {
@@ -5222,7 +5222,7 @@
                 }),
                 a.linkSeries(),
                 A(a, "beforeRender"),
-                a.pointer = new $a(a,b),
+                a.pointer = new a(a,b),
                 a.render(),
                 a.renderer.draw(),
                 c && c.apply(a, [a]),
@@ -5243,7 +5243,7 @@
         getCenter: function() {
             var a = this.options, b = this.chart, c = 2 * (a.slicedOffset || 0), d, e = b.plotWidth - 2 * c, f = b.plotHeight - 2 * c, b = a.center, a = [n(b[0], "50%"), n(b[1], "50%"), a.size || "100%", a.innerSize || 0], g = I(e, f), h;
             return Ra(a, function(a, b) {
-                h = /%$/.test(a);
+                h = /%/.test(a);
                 d = b < 2 || b === 2 && h;
                 return (h ? [e, f, g, g][b] * z(a) / 100 : a) + (d ? c : 0)
             })

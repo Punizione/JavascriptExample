@@ -11,9 +11,9 @@ import json
 
 '''
 <script type="text/javascript">
-    $(function () {
-        $.post("/ZhanHui/ajax/UpdateClickByEshowNo.ashx", { id: 127989, isupdate: 1 }, function(data) {
-                    $("#txtClicks").html(data.Click);
+    (function () {
+        .post("/ZhanHui/ajax/UpdateClickByEshowNo.ashx", { id: 127989, isupdate: 1 }, function(data) {
+                    ("#txtClicks").html(data.Click);
                 }, "json");
                           
                         })

@@ -1,9 +1,9 @@
 # -*- coding：utf-8 -*-
 import base64
-import rsa
+# import rsa
 from Crypto.Cipher import AES
 from Crypto.PublicKey import RSA
-from pyDes import des, CBC, PAD_PKCS5
+# from pyDes import des, CBC, PAD_PKCS5
 from Crypto.Cipher import DES3
 import hashlib
 import hmac
@@ -252,11 +252,14 @@ if __name__ == '__main__':
     a = aes_test.encrypt("测试")
     b = aes_test.decodebytes(a)
     rsa_test = USE_RSA()
-    a = rsa_test.rsaEncrypt("测试加密")
+    a = rsa_test.rsaEncrypt("18996586800")
     b = rsa_test.rsaDecrypt(a)
+    print(a, b)
+
     des_test = USE_DES(b"12345678", b"12345678")
     a = des_test.encrypt("测试加密")
     b = des_test.descrypt(a)
+
     des3_test = USE_DES3(b"123456789qazxswe")
     a = des3_test.encrypt("测试加密")
     b = des3_test.decrypt(a)

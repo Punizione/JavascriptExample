@@ -62,14 +62,14 @@ class EnAES(object):
 
     def url_encrypt(self, url):
         # 通过分割提取获取到url中的数字id
-        url_id = url.split('/')[-1].split('.')[0]
-        print('url_id : ', url_id)
-        encrypt_id = self.aes_encrypt(url_id)  # 获取url中的数字"20825",并调用aes_encrypt解密
-        url = url.split('/')
+        # url_id = url.split('/')[-1].split('.')[0]
+        # print('url_id : ', url_id)
+        encrypt_id = self.aes_encrypt(url)  # 获取url中的数字"20825",并调用aes_encrypt解密
+        # url = url.split('/')
         # 获取得到加密后的id进行替换、得到加密后的url
-        url[-1] = encrypt_id+'.'+url[-1].split('.')[1]
-        return "/".join(url)
-
+        # url[-1] = encrypt_id+'.'+url[-1].split('.')[1]
+        # return "/".join(url)
+        return encrypt_id
 
 def main():
     url_1 = 'http://ggzy.gzlps.gov.cn/jyxxzczb/20825.jhtml'
@@ -80,9 +80,13 @@ def main():
     后面每一次获取加密链接至需要调用aes.url_encrypt(url)即可
     """
 
-    print(aes.url_encrypt(url_1))
+    print(aes.url_encrypt('18996586800'))
     # print(aes.url_encrypt(url_2))
 
 
 if __name__ == '__main__':
     main()
+
+
+
+

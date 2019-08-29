@@ -1,5 +1,24 @@
 import execjs
 
+'''
+查找价格js的入口
+第一步：打开Chrome浏览器，地址栏输入网址，并按下F12，打开调试器，切换到Network面板，再按下回车，进行访问。
+先全局搜索商品价格：4440，发现搜索不到，那只有去一个一个页面看了。
+在这里，我们只查看 XHR加载的页面：并且发现一个getEvaluateData?goods_id=47这个请求
+看见这个返回信息是加密后的信息
+
+这个时候一般已经卡死、但可以尝试新方法、鼠标移到getEvaluateData?goods_id=47的Initiator选项卡上并点击第一个send，并且在代码里面打上断点、因为send是获得所有请求后再调用的、所以所有参数应该都准备好才调用该方法、所以在call stack堆栈中逐个逐个往上找、当找到jsonCall这个栈时、便可以看见decode这个可疑的方法、然后就把之前send方法的断点取消在调用decode方法的代码上打上新的断点并刷新网页。
+
+可以看到decode调用时有两个参数decode(res, code) 鼠标指着res可以看到res便是之前找到的加密代码、 code则是从Response.headers中的content-text中获取
+
+接下来按f11追进去看 发现该函数最后返回的值便包含该商品的所有信息。
+
+在抠js代码的时候注意
+先把decode函数拿出来
+然后把decode函数所用到的函数也抠出来、这里包含str_replace、str_split、Base64
+利用execjs执行这段js就可以得到结果
+'''
+
 func = '''
 
 function Base64() {

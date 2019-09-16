@@ -5,7 +5,7 @@ from lxml import etree
 class Qianlima_Spider:
     def __init__(self):
         # 建立redis连接池 11为剑鱼 12为千里马
-        pool = redis.ConnectionPool(host='120.77.159.174', port=6379, db=12)
+        pool = redis.ConnectionPool(host='0.0.0.0', port=6379, db=12)
         self.r = redis.Redis(connection_pool=pool)
 
         self.casual_headers = {

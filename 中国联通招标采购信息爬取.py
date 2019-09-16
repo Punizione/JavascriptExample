@@ -33,7 +33,7 @@ class China_unicom(object):
 		self.going_to_crawl_single = '{}&type=3'
 		self.duplicate_part = 'http://www.chinaunicombidding.cn/jsp/cnceb/web/info1/infoList.jsp?page='
 
-		self.conn = pymysql.connect(host='47.106.13.62',
+		self.conn = pymysql.connect(host='0.0.0.0',
 									user='root',
 									password='jiayou875',
 									database='zb_data',
@@ -42,7 +42,7 @@ class China_unicom(object):
 									charset='utf8')
 		self.cur = self.conn.cursor()
 
-		pool = redis.ConnectionPool(host='120.77.159.174', port=6379, db=15)
+		pool = redis.ConnectionPool(host='0.0.0.0', port=6379, db=15)
 		self.r = redis.Redis(connection_pool=pool)
 		# 转换成localtime
 		now_time = '%.0f' % time.time()

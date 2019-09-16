@@ -12,7 +12,7 @@ class Crawl_company_name:
 
         self.lock = threading.Lock()
         self.conn = pymysql.connect(
-                            host='47.106.13.62',
+                            host='0.0.0.0',
                             user='root',
                             password='jiayou875',
                             database='test_demo',
